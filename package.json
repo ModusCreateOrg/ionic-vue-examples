@@ -1,0 +1,35 @@
+{
+  "name": "ionic-vue-examples",
+  "version": "0.0.1",
+  "description": "Examples of @ionic/vue usage",
+  "author": "Michael Tintiuc <michael.tintiuc@moduscreate.com>",
+  "user": "michaeltintiuc",
+  "license": "MIT",
+  "repository": "github:ModusCreateOrg/ionic-vue-examples",
+  "bugs": {
+    "url": "https://github.com/ModusCreateOrg/ionic-vue-examples/issues"
+  },
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 5.0.0"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@ionic/core": "4.0.0-rc.2",
+    "@modus/ionic-vue": "^1.2.2",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-promise": "3.8.0",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
