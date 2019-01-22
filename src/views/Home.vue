@@ -1,12 +1,24 @@
 <template>
-  <ion-page class="ion-page" main>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>@ionic/vue examples</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content padding>
-      <router-link to="modal">Modal controller</router-link>
-    </ion-content>
-  </ion-page>
+  <IonVuePage :title="'@ionic/vue examples'" :showBackButton="false">
+    <ion-list>
+      <ion-item v-for="(link, i) in links" :key="i">
+        <router-link :to="toUrl(link)">{{ link }}</router-link>
+      </ion-item>
+    </ion-list>
+  </IonVuePage>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      links: ['Action Sheet', 'Alert', 'Modal'],
+    }
+  },
+  methods: {
+    toUrl(str) {
+      return str.toLowerCase().replace(' ', '-')
+    },
+  },
+}
+</script>

@@ -13,6 +13,8 @@ export default new IonicVueRouter({
   base: process.env.BASE_URL,
   routes: [
     { path: '/', component: Home },
+    { path: '/action-sheet', component: () => import('@/views/ActionSheet.vue') },
+    { path: '/alert', component: () => import('@/views/Alert.vue') },
     { path: '/modal', component: () => import('@/views/Modal.vue') },
   ],
 })

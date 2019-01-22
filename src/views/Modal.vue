@@ -1,17 +1,7 @@
 <template>
-  <ion-page class="ion-page" main>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Modal controller</ion-title>
-        <ion-buttons slot="start">
-          <ion-back-button default-href="/" />
-        </ion-buttons>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content class="ion-content" padding>
-      <ion-button @click="openModal">Open Modal</ion-button>
-    </ion-content>
-  </ion-page>
+  <IonVuePage :title="'Modal'">
+    <ion-button @click="openModal">Open Modal</ion-button>
+  </IonVuePage>
 </template>
 
 <script>

@@ -19,7 +19,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@ionic/core": "4.0.0-rc.2",
+    "@ionic/core": "4.0.0-rc.3",
     "@modus/ionic-vue": "^1.2.2",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
