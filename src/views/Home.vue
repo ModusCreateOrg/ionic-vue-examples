@@ -12,7 +12,7 @@
 export default {
   data() {
     return {
-      links: ['Action Sheet', 'Alert', 'Modal'],
+      links: ['Action Sheet', 'Alert', 'Loading', 'Menu', 'Modal'],
     }
   },
   methods: {

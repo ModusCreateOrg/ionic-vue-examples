@@ -5,21 +5,28 @@
 </template>
 
 <script>
-import Modal from '@/components/modal/index.vue'
-
 export default {
   name: 'Modal',
+  mounted() {
+    this.$on('close', () => {
+      this.$ionic.modalController.dismiss()
+    })
+  },
   methods: {
     openModal() {
       return this.$ionic.modalController
         .create({
-          component: Modal,
+          component: () => import('@/components/modal/index.vue'),
           componentProps: {
+            parent: this,
             data: {
               content: 'New Content',
             },
             propsData: {
               title: 'New title',
+              closeMe: () => {
+                this.$ionic.modalController.dismiss()
+              },
             },
           },
         })

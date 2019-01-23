@@ -8,6 +8,8 @@
     </ion-header>
     <ion-content padding>
       {{ content }}
+      <br />
+      <ion-button @click="closeMe">Close Me!</ion-button>
     </ion-content>
   </div>
 </template>
@@ -17,6 +19,7 @@ export default {
   name: 'Modal',
   props: {
     title: { type: String, default: 'Super Modal' },
+    closeMe: { type: Function, default: () => {} },
   },
   data() {
     return {
@@ -25,7 +28,7 @@ export default {
   },
   methods: {
     close() {
-      this.$ionic.modalController.dismiss()
+      this.$parent.$emit('close', { foo: 'bar' })
     },
   },
 }

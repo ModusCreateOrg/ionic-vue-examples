@@ -15,6 +15,8 @@ export default new IonicVueRouter({
     { path: '/', component: Home },
     { path: '/action-sheet', component: () => import('@/views/ActionSheet.vue') },
     { path: '/alert', component: () => import('@/views/Alert.vue') },
+    { path: '/loading', component: () => import('@/views/Loading.vue') },
+    { path: '/menu', component: () => import('@/views/Menu.vue') },
     { path: '/modal', component: () => import('@/views/Modal.vue') },
   ],
 })
