@@ -2,7 +2,8 @@
   <div>
     <ion-header>
       <ion-toolbar>
-        <ion-title>{{ title }}</ion-title>
+        <ion-title slot="start">{{ title }}</ion-title>
+        <ion-icon @click="close" slot="end" size="large" name="close" />
       </ion-toolbar>
     </ion-header>
     <ion-content padding>
@@ -21,6 +22,11 @@ export default {
     return {
       content: 'Content',
     }
+  },
+  methods: {
+    close() {
+      this.$ionic.modalController.dismiss()
+    },
   },
 }
 </script>
