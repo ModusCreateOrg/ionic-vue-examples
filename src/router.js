@@ -18,5 +18,12 @@ export default new IonicVueRouter({
     { path: '/loading', component: () => import('@/views/Loading.vue') },
     { path: '/menu', component: () => import('@/views/Menu.vue') },
     { path: '/modal', component: () => import('@/views/Modal.vue') },
+    {
+      path: '/tabs',
+      component: () => import('@/views/tabs/index.vue'),
+      children: [
+        { path: 'settings', components: { 'settings-tab': () => import('@/views/tabs/Settings.vue') } },
+      ],
+    },
   ],
 })
