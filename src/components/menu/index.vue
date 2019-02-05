@@ -29,6 +29,6 @@ export default {
         side: this.side,
       })
     },
-  }
+  },
 }
 </script>
