@@ -1,12 +1,14 @@
 <template>
-  <ion-content>
-    <p :key="i" v-for="(n, i) in numbers">{{ n }}</p>
-    <ion-vue-router />
-  </ion-content>
+  <ion-tab tab="home">
+    <ion-content>
+      <p :key="i" v-for="(n, i) in numbers">{{ n }}</p>
+    </ion-content>
+  </ion-tab>
 </template>
 
 <script>
 export default {
+  name: 'TabsHome',
   data: function() {
     return {
       numbers: [Math.round(Math.random() * 10), Math.round(Math.random() * 10)],

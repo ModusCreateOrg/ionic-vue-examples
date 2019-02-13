@@ -1,8 +1,10 @@
 <template>
-  <ion-content>
-    <p :key="i" v-for="(n, i) in numbers">{{ n }}</p>
-    <ion-vue-router />
-  </ion-content>
+    <ion-content>
+      <p :key="i" v-for="(n, i) in numbers">
+      <span @click="$router.push('settings/asd')">{{ n }}</span>
+      </p>
+      <ion-vue-router />
+    </ion-content>
 </template>
 
 <script>

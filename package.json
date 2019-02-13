@@ -21,7 +21,7 @@
   "dependencies": {
     "@ionic/core": "4.0.0",
     "@modus/ionic-vue": "^1.2.2",
-    "vue": "^2.5.16",
+    "vue": "^2.6.5",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -30,6 +30,6 @@
     "@vue/cli-service": "^3.0.1",
     "@vue/eslint-config-prettier": "^3.0.1",
     "eslint-plugin-promise": "3.8.0",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.6.5"
   }
 }

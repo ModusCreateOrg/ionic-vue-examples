@@ -17,8 +17,17 @@ export default {
   },
   methods: {
     toUrl(str) {
-      return str.toLowerCase().replace(' ', '-')
+      return '/' + str.toLowerCase().replace(' ', '-')
     },
+  },
+  created() {
+    console.log('created index tab')
+  },
+  mounted() {
+    console.log('mounted index tab')
+  },
+  destroyed() {
+    console.log('destroyed index tab')
   },
 }
 </script>

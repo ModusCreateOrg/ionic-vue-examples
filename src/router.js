@@ -3,6 +3,8 @@ import Vue from 'vue'
 import { IonicVueRouter } from '@modus/ionic-vue'
 import Home from '@/views/Home.vue'
 
+import { default as HomeTabs } from '@/views/tabs/Home.vue'
+
 // Enable the ionic-vue router plugin
 Vue.use(IonicVueRouter)
 
@@ -22,7 +24,11 @@ export default new IonicVueRouter({
       path: '/tabs',
       component: () => import('@/views/tabs/index.vue'),
       children: [
-        { path: 'settings', components: { 'settings-tab': () => import('@/views/tabs/Settings.vue') } },
+        { path: 'home', component: HomeTabs },
+        // { path: 'home/qwe', components: {} },
+        { path: 'settings', components: {} },
+        { path: 'settings/asd', component: { template: '<h1>asdasdasd</h1>' }
+        },
       ],
     },
   ],
