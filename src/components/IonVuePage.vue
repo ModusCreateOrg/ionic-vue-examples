@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .footer-text {
   font-size: 80%;
   margin: 10px 0;
@@ -40,5 +40,9 @@ export default {
   display: block;
   margin: 0 auto 10px auto;
   width: 9.6825rem;
+}
+p {
+  margin: 42px;
+  font-size: 20px;
 }
 </style>

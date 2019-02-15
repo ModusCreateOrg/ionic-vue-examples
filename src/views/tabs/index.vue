@@ -1,13 +1,18 @@
 <template>
   <IonTabs ref="ionTabs">
-    <!-- <ion-tab tab="home">
+    <ion-tab tab="home" :routes="['tabs.home', 'tabs.home2']">
+      <router-link v-if="$route.name === 'tabs.home'" :to="{ name: 'tabs.home2' }">go to home 2</router-link>
+      <router-link v-else :to="{ name: 'tabs.home' }">go to home</router-link>
       <Home />
     </ion-tab>
+
+    <!--
     <keep-alive>
       <router-view />
-    </keep-alive> -->
+    </keep-alive>
+    <Home />
+    -->
 
-      <Home />
 
     <ion-tab tab="settings">
       <Settings />
@@ -16,7 +21,7 @@
     <!-- Use v-slot:bottom with Vue ^2.6.0 -->
     <template slot="bottom">
       <ion-tab-bar>
-        <ion-tab-button tab="home">
+        <ion-tab-button tab="home" :to="{ name: 'tabs.home' }">
           <ion-label>Home</ion-label>
           <ion-icon name="home"></ion-icon>
           <ion-badge>6</ion-badge>
@@ -43,6 +48,8 @@ export default {
   components: {
     Home,
     Settings,
+    // Home: () => import('@/views/tabs/Home.vue'),
+    // Settings: () => import('@/views/tabs/Settings.vue'),
   },
   methods: {
     switchToHomeTab() {

@@ -1,9 +1,7 @@
 <template>
-  <ion-tab tab="home">
     <ion-content>
       <p :key="i" v-for="(n, i) in numbers">{{ n }}</p>
     </ion-content>
-  </ion-tab>
 </template>
 
 <script>
@@ -11,11 +9,15 @@ export default {
   name: 'TabsHome',
   data: function() {
     return {
-      numbers: [Math.round(Math.random() * 10), Math.round(Math.random() * 10)],
+      numbers: [],
     }
   },
   created() {
     console.log('created home tab')
+
+    for (var i of [...Array(1000).keys()]) {
+      this.numbers[i] = Math.round(Math.random() * 10)
+    }
   },
   mounted() {
     console.log('mounted home tab')
