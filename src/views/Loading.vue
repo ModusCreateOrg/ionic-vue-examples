@@ -15,7 +15,7 @@ export default {
     presentLoading() {
       return this.$ionic.loadingController
         .create({
-          message: 'Hellooo',
+          message: 'Loading',
           duration: this.timeout,
         })
         .then(l => {
