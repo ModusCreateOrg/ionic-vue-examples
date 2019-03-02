@@ -3,8 +3,7 @@ import Vue from 'vue'
 import Ionic from '@modus/ionic-vue'
 import router from '@/router'
 
-// Ionic core styles and theming
-import '@ionic/core/css/core.css'
+// Ionic core styles
 import '@ionic/core/css/ionic.bundle.css'
 
 // Import IonVuePage component
