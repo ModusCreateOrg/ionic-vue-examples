@@ -24,9 +24,11 @@ export default new IonicVueRouter({
       path: '/tabs',
       component: () => import('@/views/tabs/index.vue'),
       children: [
-        // { path: 'home', name: 'tabs.home', component: HomeTabs },
-        { path: 'home', name: 'tabs.home' },
-        { path: 'home2', name: 'tabs.home2', component: { template: '<h1>home2</h1>' }},
+        { path: 'home', name: 'tabs.home', component: HomeTabs, children: [
+          { path: 'home2', name: 'tabs.home2', component: { template: '<h1>home2</h1>' }},
+        ]},
+        // { path: 'home', name: 'tabs.home' },
+        { path: 'foo', name: 'tabs.foo' },
         // { path: 'home' },
         // { path: 'home', component: HomeTabs },
         // { path: 'home/qwe', components: {} },
