@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     close() {
-      this.$emit('close', { foo: 'bar' })
+      this.$parent.$emit('close', { foo: 'bar' })
     },
   },
 }
