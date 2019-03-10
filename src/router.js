@@ -18,5 +18,6 @@ export default new IonicVueRouter({
     { path: '/loading', component: () => import('@/views/Loading.vue') },
     { path: '/menu', component: () => import('@/views/Menu.vue') },
     { path: '/modal', component: () => import('@/views/Modal.vue') },
+    { path: '/popover', component: () => import('@/views/Popover.vue') },
   ],
 })
