@@ -19,15 +19,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@ionic/core": "4.0.0",
-    "@modus/ionic-vue": "^1.2.6",
+    "@ionic/core": "^4.1.1",
+    "@modus/ionic-vue": "^1.2.14",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
     "@vue/eslint-config-prettier": "^3.0.1",
     "eslint-plugin-promise": "3.8.0",
     "vue-template-compiler": "^2.5.16"
