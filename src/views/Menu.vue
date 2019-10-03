@@ -1,9 +1,9 @@
 <template>
   <div>
     <Menu title="Reveal" side="start" type="reveal" menu-id="reveal" content-id="menu-page" />
-    <Menu title="Left" side="start" menu-id="first" />
-    <Menu title="Custom" side="start" menu-id="custom" class="my-custom-menu" color="tertiary" />
-    <Menu title="Push" side="end" type="push" />
+    <Menu title="Left" side="start" menu-id="first" content-id="menu-page" />
+    <Menu title="Custom" side="start" menu-id="custom" class="my-custom-menu" color="tertiary" content-id="menu-page" />
+    <Menu title="Push" side="end" type="push" content-id="menu-page" />
 
     <IonVuePage :title="'Menu'" id="menu-page">
       <ion-button @click="openLeftMenu">Open left menu</ion-button>
