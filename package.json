@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@ionic/core": "latest",
-    "@modus/ionic-vue": "^1.3.3",
+    "@modus/ionic-vue": "^1.3.10",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
