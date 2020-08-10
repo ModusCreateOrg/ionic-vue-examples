@@ -5,10 +5,11 @@
 </template>
 
 <script>
+import { actionSheetController } from '@ionic/core'
 export default {
   methods: {
     presentActionSheet() {
-      return this.$ionic.actionSheetController
+      return actionSheetController
         .create({
           header: 'Albums',
           buttons: [

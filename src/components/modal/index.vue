@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'Modal',
+  name: 'ModalContent',
   props: {
     title: { type: String, default: 'Super Modal' },
     closeMe: { type: Function, default: () => {} },
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     close() {
-      this.$parent.$emit('close', { foo: 'bar' })
+      this.$emit('close', { foo: 'bar' })
     },
   },
 }

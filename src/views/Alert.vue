@@ -15,10 +15,11 @@
 </template>
 
 <script>
+import { alertController } from '@ionic/core'
 export default {
   methods: {
     presentAlert() {
-      return this.$ionic.alertController
+      return alertController
         .create({
           header: 'Alert',
           subHeader: 'Subtitle',
@@ -29,7 +30,7 @@ export default {
     },
 
     presentAlertMultipleButtons() {
-      return this.$ionic.alertController
+      return alertController
         .create({
           header: 'Alert',
           subHeader: 'Subtitle',
@@ -40,7 +41,7 @@ export default {
     },
 
     presentAlertConfirm() {
-      return this.$ionic.alertController
+      return alertController
         .create({
           header: 'Confirm!',
           message: 'Message <strong>text</strong>!!!',
@@ -65,7 +66,7 @@ export default {
     },
 
     presentAlertPrompt() {
-      return this.$ionic.alertController
+      return alertController
         .create({
           header: 'Prompt!',
           inputs: [
@@ -128,7 +129,7 @@ export default {
     },
 
     presentAlertRadio() {
-      return this.$ionic.alertController
+      return alertController
         .create({
           header: 'Radio',
           inputs: [
@@ -185,7 +186,7 @@ export default {
     },
 
     presentAlertCheckbox() {
-      return this.$ionic.alertController
+      return alertController
         .create({
           header: 'Checkbox',
           inputs: [

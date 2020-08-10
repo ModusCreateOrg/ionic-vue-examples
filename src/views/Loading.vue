@@ -7,13 +7,14 @@
 </template>
 
 <script>
+import { loadingController } from '@ionic/core'
 export default {
   props: {
     timeout: { type: Number, default: 1000 },
   },
   methods: {
     presentLoading() {
-      return this.$ionic.loadingController
+      return loadingController
         .create({
           message: 'Loading',
           duration: this.timeout,
@@ -26,7 +27,7 @@ export default {
         })
     },
     presentLoadingWithOptions() {
-      return this.$ionic.loadingController
+      return loadingController
         .create({
           spinner: null,
           duration: this.timeout,
